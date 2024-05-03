@@ -27,24 +27,24 @@ docker pull downloads.unstructured.io/unstructured-io/unstructured:latest
 
 docker run -dt --name unstructfinal -v /SRC/TestUnstructured:/host -p 127.0.0.1:2023:8888 downloads.unstructured.io/unstructured-io/unstructured:latest
 
-4.)  Now you should have a running container called unstructured.  You can bash into that container:  
+5.  Now you should have a running container called unstructured.  You can bash into that container:  
 
 docker exec -it unstructured bash
 
-5.)  Now, you can navigate to the /host folder.  Go to the root directory, find the host directory.
+6.  Now, you can navigate to the /host folder.  Go to the root directory, find the host directory.
 
-6.)  In the host directory start a jupyter notebook 
+7.  In the host directory start a jupyter notebook 
 
 jupyter notebook --ip=0.0.0.0
 
-7.)  In the jupyter notebook output in the terminal, you have to copy and paste the http url for the notebook.  It looks something like this:  
+8.  In the jupyter notebook output in the terminal, you have to copy and paste the http url for the notebook.  It looks something like this:  
  http://127.0.0.1:8888/tree?token=76be311b27f2903c34354205fef04123e3e4b3f465be538c
  
 Change the port number from 8888 to 2023:
 
 http://127.0.0.1:2023/tree?token=76be311b27f2903c34354205fef04123e3e4b3f465be538c
 
-8.)  That should allow you to open a jupyter notebook interface in a local browser.
+9.  That should allow you to open a jupyter notebook interface in a local browser.
 
 ### The LLM step
 
